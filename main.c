@@ -120,6 +120,7 @@ BOOL SleepObfuscation(ULONG SleepTimes) {
         AddCFGAllowListsNtdll(pNtTestAlert);
         AddCFGAllowListsKernel32(VirtualProtect);
         AddCFGAllowListsKernel32(WaitForSingleObject);
+        AddCFGAllowListsKernel32(WaitForSingleObjectEx);
     }
 
     ULONG oldProtect = 0;
